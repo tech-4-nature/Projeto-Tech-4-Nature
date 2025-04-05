@@ -9,6 +9,7 @@ import 'pages/page5.dart';
 import 'pages/page6.dart';
 import 'pages/page7.dart';
 import 'pages/page8.dart';
+import 'pages/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,8 +24,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Projeto Flutter Web',
       theme: ThemeData(primarySwatch: Colors.green),
-      initialRoute: '/',
+      initialRoute: '/splash',
       routes: {
+        '/splash': (context) => const SplashScreen(),
         '/': (context) => const MenuPage(),
         '/page1': (context) => const Page1(),
         '/page2': (context) => const Page2(),

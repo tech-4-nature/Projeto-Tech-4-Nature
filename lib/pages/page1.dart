@@ -7,7 +7,7 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Página 1')),
+      appBar: AppBar(title: const Text('Agenda 2030')),
       body: Center(child: Image.asset('assets/images/1.jpg')),
     );
   }
